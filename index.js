@@ -31,8 +31,8 @@ export const volume = (level, bus = 0) => {
   return {
     bmRequestType: OUT,
     bRequest: CUR,
-    wValue: (FU_VOLUME_CONTROL << 2) + bus,
-    wIndex: FU_USBOUT << 2,
+    wValue: (FU_VOLUME_CONTROL << 8) + bus,
+    wIndex: FU_USBOUT << 8,
     data: dataToBuffer(level),
   };
 };
@@ -42,7 +42,7 @@ export const mixer = (gain, node = 1) => {
     bmRequestType: OUT,
     bRequest: CUR,
     wValue: node,
-    wIndex: ID_MIXER_1 << 2,
+    wIndex: ID_MIXER_1 << 8,
     data: dataToBuffer(gain),
   };
 };
