@@ -1,0 +1,28 @@
+{
+  "name": "usb-audio-xmos",
+  "version": "0.0.1",
+  "description": "Helpers for dealing with XMOS USB Audio devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penx/usb-audio-xmos.git"
+  },
+  "keywords": [
+    "USB",
+    "Audio",
+    "XMOS"
+  ],
+  "author": "Alasdair McLeay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/penx/usb-audio-xmos/issues"
+  },
+  "homepage": "https://github.com/penx/usb-audio-xmos#readme",
+  "dependencies": {
+    "bmrequesttype": "^0.0.4",
+    "usb-audio": "^0.0.4"
+  }
+}
